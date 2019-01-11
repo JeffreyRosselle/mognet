@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{AAF5C96A-4C7B-45A4-85DB-5BE142BF5FD2}"
+	ProjectSection(SolutionItems) = preProject
+		NuGet.config = NuGet.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Infrastructure", "1. Infrastructure", "{1664A59C-6C71-42A2-9A6E-FA0AE6809840}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Core", "2. Core", "{56595FEC-298F-4BF0-A900-627BB6858E5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Tests", "3. Tests", "{25FC029D-DE1F-4DC6-A6FF-D6EBAA97B52A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mognet.Entities", "Mognet.Entities\Mognet.Entities.csproj", "{073707DD-00BE-4177-9631-2E6928EF6C03}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mognet.Sendgrid", "Mognet.Sendgrid\Mognet.Sendgrid.csproj", "{D4DF1275-AE90-4E02-98E2-A78053C9D2AD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{073707DD-00BE-4177-9631-2E6928EF6C03} = {073707DD-00BE-4177-9631-2E6928EF6C03}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mognet.Entities.Test", "Mognet.Entities.Test\Mognet.Entities.Test.csproj", "{BAAFED14-5588-4B0C-8465-A5931387BB1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mognet.Sendgrid.Test", "Mognet.Sendgrid.Test\Mognet.Sendgrid.Test.csproj", "{3FDBED5D-7FEB-4FF0-B234-6D188E618687}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{073707DD-00BE-4177-9631-2E6928EF6C03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{073707DD-00BE-4177-9631-2E6928EF6C03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{073707DD-00BE-4177-9631-2E6928EF6C03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{073707DD-00BE-4177-9631-2E6928EF6C03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4DF1275-AE90-4E02-98E2-A78053C9D2AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4DF1275-AE90-4E02-98E2-A78053C9D2AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4DF1275-AE90-4E02-98E2-A78053C9D2AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4DF1275-AE90-4E02-98E2-A78053C9D2AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAAFED14-5588-4B0C-8465-A5931387BB1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAAFED14-5588-4B0C-8465-A5931387BB1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAAFED14-5588-4B0C-8465-A5931387BB1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAAFED14-5588-4B0C-8465-A5931387BB1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FDBED5D-7FEB-4FF0-B234-6D188E618687}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FDBED5D-7FEB-4FF0-B234-6D188E618687}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FDBED5D-7FEB-4FF0-B234-6D188E618687}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FDBED5D-7FEB-4FF0-B234-6D188E618687}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{073707DD-00BE-4177-9631-2E6928EF6C03} = {56595FEC-298F-4BF0-A900-627BB6858E5C}
+		{D4DF1275-AE90-4E02-98E2-A78053C9D2AD} = {1664A59C-6C71-42A2-9A6E-FA0AE6809840}
+		{BAAFED14-5588-4B0C-8465-A5931387BB1F} = {25FC029D-DE1F-4DC6-A6FF-D6EBAA97B52A}
+		{3FDBED5D-7FEB-4FF0-B234-6D188E618687} = {25FC029D-DE1F-4DC6-A6FF-D6EBAA97B52A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1375363-5134-45E2-ADDB-6C4106886F51}
+	EndGlobalSection
+EndGlobal
